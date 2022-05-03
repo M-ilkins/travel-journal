@@ -1,4 +1,5 @@
 import React from 'react';
+import Header from './Header';
 import JournalEntry from './Journal-Entry'
 import data from './data';
 import styles from './index.css';
@@ -13,7 +14,10 @@ export default function App(){
 
   return (
     <div>
-      {JournalData}
+      <Header/>
+      <div className='wrapper'>
+        {JournalData}
+      </div>
     </div>
   )
 };
